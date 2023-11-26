@@ -5,15 +5,12 @@ import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-s creen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#ffec00]' />
-          <div className='w-1 sm:h-80 h-40' style={{
-    background: 'linear-gradient(145deg, #ffec00, transparent)'
-  }} />
+          <div className='w-1 sm:h-80 h-40' style={{background: 'linear-gradient(145deg, #ffec00, transparent)'}} />
         </div>
 
         <div>
