@@ -13,7 +13,7 @@ class Navbar extends Component {
     return (
       <nav>
         <div id='navbg'></div>
-        <nav1>
+        <nav id='nav1'>
           <Link to='/'>
             <img src={logo} alt='logo' className='logo'/>
           </Link>
@@ -32,7 +32,7 @@ class Navbar extends Component {
           <div id='mobile' onClick={this.handleClikc}>
             <i id='bar' className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
-          </nav1>
+          </nav>
       </nav>
     )
   }

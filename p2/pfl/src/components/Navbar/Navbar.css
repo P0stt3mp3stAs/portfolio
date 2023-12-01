@@ -1,4 +1,4 @@
-nav1 {
+#nav1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -87,8 +87,8 @@ nav {
     width: 200px;
     height: 200px;
     background: #ffffff;
-  box-shadow:  2px 2px 5px #4f4f4f,
-             -2px -2px 5px #646464;
+    box-shadow:  2px 2px 5px #4f4f4f,
+                 -2px -2px 5px #646464;
     padding: 40px 0 0 10px;
     margin-right: 18px;
     border-radius: 12px;

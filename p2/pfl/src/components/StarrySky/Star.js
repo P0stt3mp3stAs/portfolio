@@ -8,8 +8,8 @@ const Star = ({ top, left }) => {
     pointerEvents: 'none',
     top,
     left,
-    width: `${Math.random() * 2 + 1}px`,
-    height: `${Math.random() * 2 + 1}px`,
+    width: `${Math.random() * 1 + 0}px`,
+    height: `${Math.random() * 1 + 0}px`,
     animation: 'twinkling 1s infinite',
     transition: 'transform 0.1s linear',
   };

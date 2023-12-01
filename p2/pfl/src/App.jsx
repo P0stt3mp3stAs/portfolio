@@ -1,15 +1,17 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import StarrySky from './components/StarrySky/StarrySky';
+import ImageLoop from './components/ImageLoop/ImageLoop';
+import VideoLoop from './components/VideoLoop/VideoLoop';
 
 const App = () => {
   return (
     <div className="App">
-      <StarrySky />
+      {/* <StarrySky /> */}
       <Navbar/>
-      <div className='poop'>
-      <div>tjyfgukhjsgneriulkjth</div><br></br><div>tjyfgukhjsgneriulkjth</div><br></br><div>tjyfgukhjsgneriulkjth</div><br></br><div>tjyfgukhjsgneriulkjth</div><br></br><div>tjyfgukhjsgneriulkjth</div><br></br><div>tjyfgukhjsgneriulkjth</div><br></br><div>tjyfgukhjsgneriulkjth</div><br></br><div>tjyfgukhjsgneriulkjth</div><br></br><div>tjyfgukhjsgneriulkjth</div><br></br><div>tjyfgukhjsgneriulkjth</div><br></br><div>tjyfgukhjsgneriulkjth</div><br></br>
-      </div>
+      {/* <VideoLoop/> */}
+      <ImageLoop/>
+      
     </div>
   );
 }
