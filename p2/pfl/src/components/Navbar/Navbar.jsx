@@ -9,24 +9,44 @@ class Navbar extends Component {
   handleClikc = () => {
     this.setState({clicked: !this.state.clicked})
   }
+  handleAboutClick = () => {
+    // Scroll to 20% of the page
+    window.scrollTo({ top: window.innerHeight / 4, behavior: 'smooth' });
+    this.setState({ clicked: false });
+  };
+
+  handleAchievementsClick = () => {
+    if (this.props.achievementsRef && this.props.achievementsRef.current) {
+      const achievementsPosition = this.props.achievementsRef.current.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: achievementsPosition, behavior: 'smooth' });
+    }
+  };
+
+  handleSayHiClick = () => {
+    window.location.href = 'mailto:ghaliwali@gmail.com';
+  };
+
+  handleNav1Click = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   render() {
     return (
       <nav>
         <div id='navbg'></div>
-        <nav id='nav1'>
+        <nav id='nav1' onClick={this.handleNav1Click}>
           <Link to='/'>
             <img src={logo} alt='logo' className='logo'/>
           </Link>
 
-          <ul id='menu' className={this.state.clicked ? "#menu active" : "#menu"}>
+          <ul id='menu' className={this.state.clicked ? 'active' : ''}>
             <li>
-              <a href="/About">About</a>
+              <a onClick={this.handleAboutClick}>About</a>
             </li>
             <li>
-              <a href="Acheavments">achievements</a>
+              <a onClick={this.handleAchievementsClick}>achievements</a>
             </li>
             <li>
-              <a href="Say Hi">Say Hi</a>
+              <a onClick={this.handleSayHiClick}>Say Hi</a>
             </li>
           </ul>
           <div id='mobile' onClick={this.handleClikc}>

@@ -11,6 +11,11 @@
   padding-left: 10px;
 }
 
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
 #menu {
   display: flex;
   align-items:  center;
@@ -22,6 +27,7 @@
   list-style: none;
   padding: 0 20px;
   position: relative;
+  cursor: pointer;
   
 }
 
@@ -30,7 +36,7 @@
   font-size: 1.3rem;
   font-weight: 600;
   color: black;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 #menu li a:hover{
@@ -59,11 +65,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+  margin-top: 58px;
 }
 
 nav {
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   
 }
 
