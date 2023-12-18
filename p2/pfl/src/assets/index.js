@@ -2,6 +2,20 @@ import logo from "./logo.svg";
 import aboutbg from "./aboutbg.svg";
 import video from "./logo.mp4";
 import video1 from "./logo.mov";
+
+      //Footer
+import sunburn from "./footerbg.svg"
+import light from "./footerLogo.svg"
+import Lname from "./footerLogoName.svg"
+
+import li from "./li.svg"
+import ig from "./ig.svg"
+import git from "./git.svg"
+import mail from "./mail.svg"
+import x from "./x.svg"
+import co from "./co.svg"
+
+      // Achievements
 import A from "./A.png"
 import B from "./B.png"
 import C from "./C.png"
@@ -12,6 +26,7 @@ import G from "./G.png"
 import H from "./H.png"
 import I from "./I.png"
 import J from "./J.png"
+
       // image loooooooooooooppppppppp
 import i1 from "./0001.png"
 import i2 from './0002.png';
@@ -100,6 +115,17 @@ export {
   video,
   video1,
   aboutbg,
+  sunburn,
+  light,
+  Lname,
+  li,
+  ig,
+  git,
+  mail,
+  x,
+  co,
+
+      // Achievements
   A,
   B,
   C,
